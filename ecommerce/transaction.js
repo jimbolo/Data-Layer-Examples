@@ -16,7 +16,7 @@ dataLayer.push({
         'name': 'Mailbox',          // Required.
         'category': 'Free',         // Required. Selected Plan Name. Insert one of the following: Free, Pay-As-You-Go, Basic, Starter, Standard, Premium
         'id': '25',                 // Required. Selected Plan ID
-        'plan': 'Free',             // Selected Plan Name. Insert one of the following: Free, Pay-As-You-Go, Basic, Starter, Standard, Premium
+        'plan': 'Free',             // Required. Selected Plan Name. Insert one of the following: Free, Pay-As-You-Go, Basic, Starter, Standard, Premium
         'price': '0.00',            // Required. Selected Plan Amount
         'storeId': '6',             // Required. Selected Store ID
         'address': 'Anaheim CA',    // Required. Selected Store City and State
