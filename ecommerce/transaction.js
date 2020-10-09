@@ -13,7 +13,7 @@ dataLayer.push({
       },
       'products': [{
         'brand': 'PostScan Mail',   // Required.
-        'name': 'Mailbox',          // Required.
+        'name': 'Mailbox',          // Required. Use "Mailbox" as a name.
         'category': 'Free',         // Required. Selected Plan Name. Insert one of the following: Free, Pay-As-You-Go, Basic, Starter, Standard, Premium
         'id': '25',                 // Required. Selected Plan ID
         'plan': 'Free',             // Required. dimmnesion1. Selected Plan Name. Insert one of the following: Free, Pay-As-You-Go, Basic, Starter, Standard, Premium
