@@ -18,7 +18,7 @@ dataLayer.push({
         'id': '25',                 // Required. Selected Plan ID
         'plan': 'Free',             // Required. dimmnesion1. Selected Plan Name. Insert one of the following: Free, Pay-As-You-Go, Basic, Starter, Standard, Premium
         'price': '0.00',            // Required. Selected Plan Amount
-        'storeId': '6',             // Required. dimmnesion2. Selected Store ID
+        'storeId': '6',             // Required. dimmnesion2. Selected Sub- Store ID
         'address': 'Anaheim CA',    // Required. dimmnesion3. Selected Store City and State
         'quantity': 1               // Required.
        }]
