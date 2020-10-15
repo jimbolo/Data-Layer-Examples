@@ -6,7 +6,7 @@ dataLayer.push({
     'purchase': {
       'actionField': {
         'userId': '',         // User ID if it is available. It will map with Account ID
-        'id': 'T12345',       // Transaction ID. Required for purchases and refunds.
+        'id': 'T12345',       // Transaction ID. Required for purchases and refunds. Currently we will use random number
         'affiliation': '',    // Name if it is available
         'revenue': '0.00',    // Required. Total of products prices below.
         'coupon': ''          // Coupon Name or ID if it is available
