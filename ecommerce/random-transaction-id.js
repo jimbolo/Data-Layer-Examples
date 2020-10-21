@@ -1,4 +1,4 @@
-function password_generator( len ) {
+function transaction_id_generator( len ) {
     var length = (len)?(len):(10);
     var string = "abcdefghijklmnopqrstuvwxyz"; //to upper 
     var numeric = '0123456789';
@@ -21,4 +21,4 @@ function password_generator( len ) {
     return password.substr(0,len);
 }
 
-console.log( password_generator() );
+console.log( transaction_id_generator() );
