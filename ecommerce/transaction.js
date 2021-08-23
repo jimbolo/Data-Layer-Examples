@@ -4,8 +4,6 @@ dataLayer.push({
   event: 'transaction',
   ecommerce: {
     purchase: {
-  
-  
         actionField: {
                       userId: 'U12345',    // User ID if it is available. Map with Account ID
                       id: 'T12345',       // Transaction ID. Required for purchases and refunds. Currently we will use random number
