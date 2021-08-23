@@ -1,7 +1,7 @@
 <script>
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
-  event': 'transaction',
+  event: 'transaction',
   ecommerce: {
     purchase: {
   
@@ -33,7 +33,7 @@ dataLayer.push({
                       home_address: {
                                       street: '{{yourStreetAddressVariable}}',
                                       city:'{{yourCityVariable}}',
-                                      region: '{{yourRegionVariable}},
+                                      region: '{{yourRegionVariable}}',
                                       postal_code: '{{yourPostalCodeVariable}}',
                                       country: '{{yourCountryVariable}}'
                                     }
