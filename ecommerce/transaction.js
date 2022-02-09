@@ -8,9 +8,8 @@
 // when the page loads. Otherwise, use an event when the transaction
 // data becomes available.
 
-
+window.dataLayer = window.dataLayer || [];
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
-//window.dataLayer = window.dataLayer || [];
 dataLayer.push({
   'event': 'transaction',
   'ecommerce': {
