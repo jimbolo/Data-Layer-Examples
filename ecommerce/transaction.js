@@ -1,5 +1,6 @@
 <script>
-window.dataLayer = window.dataLayer || [];
+// window.dataLayer = window.dataLayer || [];
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: 'transaction',
   ecommerce: {
