@@ -7,7 +7,7 @@ dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
 event: 'purchase',
     ecommerce:{
-        user_id: 'Uid12345',    // User ID if it is available. Specifies a known identifier for a user provided by the site owner/library user. 
+        user_id: 'uid12345',    // User ID if it is available. Specifies a known identifier for a user provided by the site owner/library user. 
                                 // It must not itself be PII (personally identifiable information). The value should never be persisted in Google Analytics cookies or other Analytics provided storage.
                                 // (Character Limit 256 and Type String)
         transaction_id: '1fdcbea7-6358-4865-a8c4-fab1eee51ed2', // Required. Unique ID for the transaction.
