@@ -7,16 +7,16 @@ dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
 event: 'purchase',
     ecommerce:{
-        user_id: 'Uid12345', // User ID if it is available. Specifies a known identifier for a user provided by the site owner/library user. 
-    // It must not itself be PII (personally identifiable information). The value should never be persisted in Google Analytics cookies or other Analytics provided storage.
-    // (Character Limit 256 and Type String)
+        user_id: 'Uid12345',    // User ID if it is available. Specifies a known identifier for a user provided by the site owner/library user. 
+                                // It must not itself be PII (personally identifiable information). The value should never be persisted in Google Analytics cookies or other Analytics provided storage.
+                                // (Character Limit 256 and Type String)
         transaction_id: '1fdcbea7-6358-4865-a8c4-fab1eee51ed2', // Required. Unique ID for the transaction.
-        affiliation: '',    // Name if it is available
-        value: 40.00,    // Required. Total of products prices below.
-        tax: 0.00,       // Tax amount if it is available
-        shipping: 0.00,  // Shipping amount if it is available
-        currency: 'USD',   // Required. Currency of the transaction.
-        coupon: '',          // Coupon Name or ID if it is available
+        affiliation: '', // Name if it is available
+        value: 40.00, // Required. Total of products prices below.
+        tax: 0.00,  // Tax amount if it is available
+        shipping: 0.00, // Shipping amount if it is available
+        currency: 'USD', // Required. Currency of the transaction.
+        coupon: '', // Coupon Name or ID if it is available
             items: [{   item_id: 'inkcard_national', // Required. exp "FDLE Fingerprinting" or "FBI Fingerprinting"
             item_brand: 'UPS Store 125', // Required.
             item_name: 'Certifix Booking', // Required.
