@@ -20,18 +20,17 @@ event: 'purchase',
             items: [{   
             item_id: 'inkcard_national', // Required. exp "FDLE Fingerprinting" or "FBI Fingerprinting"
             item_brand: 'UPS Store 125', // Required. Store Location Name
-            item_name: 'Booking', // Required. Static value of "Booking"
-            item_category: 'Sterling', // Required. 'Sterling" or "Certifix"
-            // item_list_id: '', //related_products
-            // item_list_name: '', //Related Products
-            affiliation: '',
-            coupon: '', // Blank Name
-            
-            discount: '0.00', // Blank
-            price: 80.00, // Required.
-            quantity: 2, // Required.
-            store_id: 'UPSSTORE125', // Required.
-            store_address: 'Anaheim CA 00000' // Required. Store City and State
+            item_name: 'Booking', // Required. Static value "Booking".
+            item_category: 'Sterling', // Required. "Sterling" or "Certifix"
+            // item_list_id: '', // Optional. related_products
+            // item_list_name: '', // Optional Related Products
+            affiliation: '', // Optional (Name of the store or affiliation)
+            coupon: '', // Optional
+            discount: '0.00', // Optional (Number)
+            price: 80.00, // Required. (Number)
+            quantity: 2, // Required. (Number)
+            store_id: 'UPSSTORE125', // Required. Manually created GA4 dimension.
+            store_address: 'Anaheim CA 00000' // Required. Store City and State. Manually created GA4 dimmnesion.
             }],
 
             customer: [{
