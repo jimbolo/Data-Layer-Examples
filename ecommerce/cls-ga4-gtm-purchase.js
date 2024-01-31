@@ -32,7 +32,7 @@ event: 'purchase',
             coupon: '',
             discount: 0.00,
             price: 40.00,
-            quantity: 1,
+            quantity: 1
             }],
 
             customer: [{
