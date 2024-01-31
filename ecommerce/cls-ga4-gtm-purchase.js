@@ -1,4 +1,6 @@
 // GA4 Purchase Using Google Tag Manager:
+// Convert all child values of the items to uppercase.
+
 // https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtm#purchase-gtm
 // https://developers.google.com/analytics/devguides/collection/ga4/reference/events?client_type=gtm#purchase
 
