@@ -18,7 +18,7 @@ event: 'refund',
             item_name: 'Certifix Booking', 
             item_category: 'Sterling',
             item_category2: 'Ink Card',
-            item_category3: '',
+            item_category3: 'Anaheim CA', // Store City and State
             item_variant: '',
             item_list_id: '', // related_products
             item_list_name: '', // Related Products
@@ -27,8 +27,8 @@ event: 'refund',
             discount: 0.00,
             price: 40.00,
             quantity: 1,
-            store_id: 'UPSSTORE125',
-            store_address: 'Anaheim CA' // Store City and State
+            store_id: 'UPSSTORE125', // not required
+            store_address: 'Anaheim CA' // not required Store City and State
             }]
 
 
