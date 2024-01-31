@@ -22,7 +22,7 @@ event: 'purchase',
             item_id: 'PRINTTOCARD', // no space, data from source code: SX = new Map([[gX.FDLE, "Florida Fingerprint Service"], [gX.PRINTTOCARD, "Finger print Service"], [gX.FBI, "FBI Fingerprint Service"], [gX.CA, "California Fingerprint Service"]])
             item_brand: 'UPS STORE 125', 
             item_name: 'BOOKING', 
-            item_category: 'STERLING',
+            item_category: 'STERLING', // ???
             item_category2: 'ANAHEIM', // Store City
             item_category3: 'CA', // Store State
             item_variant: '',
