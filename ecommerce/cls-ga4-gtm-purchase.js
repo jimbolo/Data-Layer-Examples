@@ -17,22 +17,22 @@ event: 'purchase',
         currency: 'USD', // Required. Currency of the transaction.
         coupon: '', // Coupon Name or ID if it is available
             items: [{
-            item_id: 'inkcard_national', // Required. exp "FDLE Fingerprinting" or "FBI Fingerprinting"
-            item_brand: 'UPS Store 125', // Required.
-            item_name: 'Certifix Booking', // Required.
-            item_category: 'Sterling', // Required.
-            item_category2: 'Ink Card',
-            item_category3: '',
+            item_id: 'PRINTTOCARD', // no space, data from source code: SX = new Map([[gX.FDLE, "Florida Fingerprint Service"], [gX.PRINTTOCARD, "Finger print Service"], [gX.FBI, "FBI Fingerprint Service"], [gX.CA, "California Fingerprint Service"]])
+            item_brand: 'UPS STORE 125', 
+            item_name: 'BOOKING', 
+            item_category: 'STERLING',
+            item_category2: 'ANAHEIM', // Store City
+            item_category3: 'CA', // Store State
             item_variant: '',
-            item_list_id: '', //related_products
-            item_list_name: '', //Related Products
-            affiliation: '',  // Name if it is available
+            item_list_id: '', // related_products
+            item_list_name: '', // Related Products
+            affiliation: '',
             coupon: '',
             discount: 0.00,
-            price: 40.00, // Required.
-            quantity: 1, // Required.
-            store_id: 'UPSSTORE125', // Required.
-            store_address: 'Anaheim CA' // Required. Store City and State
+            price: 40.00,
+            quantity: 1,
+            store_id: 'UPSSTORE125', // not required
+            store_address: 'ANAHEIM CA' // not required Store City and State
             }],
 
             customer: [{
