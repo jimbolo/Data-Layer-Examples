@@ -1,6 +1,5 @@
 // GA4 Refund Using Google Tag Manager
-// https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtm#purchase-gtm
-// https://developers.google.com/analytics/devguides/collection/ga4/reference/events?client_type=gtm#purchase
+// https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtm#refund-gtm
 
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 //window.dataLayer = window.dataLayer || [];
