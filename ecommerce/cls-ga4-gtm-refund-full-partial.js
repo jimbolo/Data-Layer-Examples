@@ -1,4 +1,6 @@
-// GA4 Refund Using Google Tag Manager
+// GA4 Refund Using Google Tag Manager (GTM)
+// Convert all child values of the items to uppercase.
+
 // https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtm#refund-gtm
 // Convert all child values of the items to uppercase
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
