@@ -14,22 +14,60 @@ Make sure to include each refunded item in an items array, regardless of whether
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ABCDEFGHIJ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        function transaction_id_generator( len ) {
+            var length = (len)?(len):(38);
+            var string = "abcdefghijklmnopqrstuvwxyz"; //to upper 
+            var numeric = '0123456789';
+            var punctuation = '!@#$%';
+            var transactionid = "";
+            var character = "";
+            var crunch = true;
+            while( transactionid.length<length ) {
+                entity1 = Math.ceil(string.length * Math.random()*Math.random());
+                entity2 = Math.ceil(numeric.length * Math.random()*Math.random());
+                entity3 = Math.ceil(punctuation.length * Math.random()*Math.random());
+                hold = string.charAt( entity1 );
+                hold = (transactionid.length%2==0)?(hold.toUpperCase()):(hold);
+                character += hold;
+                character += numeric.charAt( entity2 );
+                character += punctuation.charAt( entity3 );
+                transactionid = character;
+            }
+            transactionid=transactionid.split('').sort(function(){return 0.5-Math.random()}).join('');
+            return transactionid.substring(0,len);
+        }
 
-  gtag('config', 'G-ABCDEFGHIJ');
-  // gtag('config', 'G-ABCDEFGHIJ',{ 'debug_mode': true }) // debug mode
-</script>
-</head>
-<body>
-  <div>This is where the refund form would go</div>
-    <button id="refund">Refund</button>
-    <script>
+        console.log( transaction_id_generator() );
+        var count1 = transaction_id_generator().length;
+        // console.log( count1 );
+
+        // now plit transaction_id_generator() into 4 parts
+        // every 9 characters insert a dash
+        // example: 1fdcbea7-6358-4865-a8c4
+        function regenerateWithDashes() {
+            var newString = transaction_id_generator();
+            var newStringWithDashes = '';
+            for (var i = 0; i < newString.length; i++) {
+                if (i % 9 == 0 && i != 0) {
+                    newStringWithDashes += '-';
+                }
+                newStringWithDashes += newString[i];
+            }
+            return newStringWithDashes;
+        }
+        // console.log( regenerateWithDashes() );
+        // count the number of characters in the string of regenerateWithDashes()
+        var count2 = regenerateWithDashes().length;
+        // console.log( count2 );
+
+
+
+
+
     document.getElementById("refund").addEventListener("click", function () {
       gtag("event", "refund", {
         currency: "USD",
-        transaction_id: "1fdcbea7-6358-4865-a8c4-fab1eee51ed2", // Transaction ID. Required for refunds.
+        transaction_id: "" + regenerateWithDashes() + "",
         value: 40.00,
         coupon: "",
         shipping: 0.00,
@@ -38,9 +76,9 @@ Make sure to include each refunded item in an items array, regardless of whether
             item_id: "PRINTTOCARD", // no space, data from source code: SX = new Map([[gX.FDLE, "Florida Fingerprint Service"], [gX.PRINTTOCARD, "Finger print Service"], [gX.FBI, "FBI Fingerprint Service"], [gX.CA, "California Fingerprint Service"]])
             item_brand: "UPS STORE 125", 
             item_name: "BOOKING", // booking or appointment
-            item_category: "ANAHEIM", // Store City
-            item_category2: "CA", // Store State
-            item_category3: "", 
+            item_category: "STERLING",
+            item_category2: "ANAHEIM", // Store City
+            item_category3: "CA", // Store State
             item_variant: "",
             item_list_id: "", // related_products
             item_list_name: "", // Related Products
@@ -48,7 +86,9 @@ Make sure to include each refunded item in an items array, regardless of whether
             coupon: "",
             discount: 0.00,
             price: 40.00,
-            quantity: 1
+            quantity: 1,
+            store_id: "UPSSTORE125", // not required
+            store_address: "ANAHEIM CA" // not required Store City and State
             }]
       });
     
