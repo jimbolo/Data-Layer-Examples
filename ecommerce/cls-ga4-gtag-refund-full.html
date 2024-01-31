@@ -1,0 +1,34 @@
+<!--
+GA4 Refund Using Google Tag (GTAG) only.
+// Convert all child values of the items to uppercase.
+https://developers.google.com/analytics/devguides/collection/ga4/reference/events?client_type=gtag#refund
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ABCDEFGHIJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ABCDEFGHIJ');
+  // gtag('config', 'G-ABCDEFGHIJ',{ 'debug_mode': true }) // debug mode
+</script>
+</head>
+<body>
+  <div>This is where the refund form would go</div>
+    <button id="refund">Refund</button>
+    <script>
+    document.getElementById("refund").addEventListener("click", function () {
+      gtag("event", "refund", {
+        transaction_id: "1fdcbea7-6358-4865-a8c4-fab1eee51ed2" // Transaction ID. Required for refunds.
+      });
+    
+  });
+    </script>
+</body>
+</html>      
