@@ -1,5 +1,6 @@
 <!--
-
+GA4 Refund Using Google Tag (GTAG) only.
+// Convert all child values of the items to uppercase.
 https://developers.google.com/analytics/devguides/collection/ga4/reference/events?client_type=gtag#refund
 -->
 
@@ -25,34 +26,32 @@ https://developers.google.com/analytics/devguides/collection/ga4/reference/event
     document.getElementById("refund").addEventListener("click", function () {
       gtag("event", "refund", {
         currency: "USD",
-        transaction_id: "T_12345", // Transaction ID. Required for purchases and refunds.
+        transaction_id: "1fdcbea7-6358-4865-a8c4-fab1eee51ed2", // Transaction ID. Required for refunds.
         value: 40.00,
         coupon: "",
         shipping: 0.00,
         tax: 0.00,
-        items: [{
-            item_id: "SKU_12345",
-            item_name: "Stan and Friends Tee",
-            affiliation: "Google Merchandise Store",
-            coupon: "SUMMER_FUN",
-            discount: 2.22,
-            index: 0,
-            item_brand: "Google",
-            item_category: "Apparel",
-            item_category2: "Adult",
-            item_category3: "Shirts",
-            item_category4: "Crew",
-            item_category5: "Short sleeve",
-            item_list_id: "related_products",
-            item_list_name: "Related Products",
-            item_variant: "green",
-            location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
-            price: 9.99,
-            quantity: 1
-          }]
+            items: [{
+            item_id: "PRINTTOCARD", // no space, data from source code: SX = new Map([[gX.FDLE, "Florida Fingerprint Service"], [gX.PRINTTOCARD, "Finger print Service"], [gX.FBI, "FBI Fingerprint Service"], [gX.CA, "California Fingerprint Service"]])
+            item_brand: "UPS STORE 125", 
+            item_name: "BOOKING", 
+            item_category: "STERLING",
+            item_category2: "ANAHEIM", // Store City
+            item_category3: "CA", // Store State
+            item_variant: "",
+            item_list_id: "", // related_products
+            item_list_name: "", // Related Products
+            affiliation: "",
+            coupon: "",
+            discount: 0.00,
+            price: 40.00,
+            quantity: 1,
+            store_id: "UPSSTORE125", // not required
+            store_address: "ANAHEIM CA" // not required Store City and State
+            }]
       });
     
-      });
+  });
     </script>
 </body>
 </html>      
