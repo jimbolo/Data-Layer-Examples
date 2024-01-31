@@ -33,8 +33,6 @@ event: 'purchase',
             discount: 0.00,
             price: 40.00,
             quantity: 1,
-            store_id: 'UPSSTORE125', // not required
-            store_address: 'ANAHEIM CA' // not required Store City and State
             }],
 
             customer: [{
