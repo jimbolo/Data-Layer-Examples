@@ -7,13 +7,25 @@ A full refund includes all the items purchased, while a partial refund includes 
 Make sure to include each refunded item in an items array, regardless of whether you issue a full or partial refund.
 -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ABCDEFGHIJ"></script>
 <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  ABCDEFGHIJ      
+  gtag('js', new Date());
+  gtag('set', 'linker', {'domains': ['example.com']});
+  // gtag('config', 'G-ABCDEFGHIJ');
+   gtag('config', 'G-ABCDEFGHIJ',{ 'debug_mode': true }) // debug mode
+</script>
+</head>
+<body>
+  <div><h3>Trigger Refund Data Layer</h3></div>
+    <button id="refund">Refund</button>
+    <script>
         function transaction_id_generator( len ) {
             var length = (len)?(len):(38);
             var string = "abcdefghijklmnopqrstuvwxyz"; //to upper 
@@ -78,7 +90,7 @@ Make sure to include each refunded item in an items array, regardless of whether
             item_name: "BOOKING", // booking or appointment
             item_category: "ANAHEIM",
             item_category2: "CA",
-            item_category3: "", 
+            item_category3: "",
             item_variant: "",
             item_list_id: "", // related_products
             item_list_name: "", // Related Products
@@ -93,4 +105,4 @@ Make sure to include each refunded item in an items array, regardless of whether
   });
     </script>
 </body>
-</html>      
+</html>
