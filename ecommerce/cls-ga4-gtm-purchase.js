@@ -17,6 +17,7 @@ event: 'purchase',
         tax: 0.00,  // Tax amount if it is available
         shipping: 0.00, // Shipping amount if it is available
         currency: 'USD', // Required. Currency of the transaction.
+        new_customer: true,
         coupon: '', // Coupon Name or ID if it is available
             items: [{
             item_id: 'PRINTTOCARD', // no space, data from source code: SX = new Map([[gX.FDLE, "Florida Fingerprint Service"], [gX.PRINTTOCARD, "Finger print Service"], [gX.FBI, "FBI Fingerprint Service"], [gX.CA, "California Fingerprint Service"]])
