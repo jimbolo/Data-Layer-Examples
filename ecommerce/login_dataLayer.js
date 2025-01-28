@@ -18,7 +18,7 @@ For normalization: Remove leading or trailing whitespaces. Convert the text to l
 
 The phone number must be in E.164 format,
 which means it must be 11 to 15 digits including a plus sign (+) prefix
-and country code with no dashes, brackets or spaces.
+and country code with no dashes, brackets or spaces. exp: +14155552671
 
 For hash: Use hex SHA256. https://support.google.com/google-ads/answer/9004655
 
