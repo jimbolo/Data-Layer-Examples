@@ -23,7 +23,7 @@ and country code with no dashes, brackets or spaces. exp: +14155552671
 For hash: Use hex SHA256. https://support.google.com/google-ads/answer/9004655
 
 Validate your implementation using Chrome Developer Tools
-https://support.google.com/google-ads/answer/13262500?#zippy=%2Cenable-enhanced-conversions-in-google-tag-manager-and-create-custom-javascript-variable%2Cidentify-and-define-your-enhanced-conversions-variables
+https://support.google.com/google-ads/answer/13262500?#zippy=%2Cenable-enhanced-conversions-in-google-tag-manager-and-create-custom-javascript-variable%2Cidentify-and-define-your-enhanced-conversions-variables%2Cvalidate-your-implementation-using-chrome-developer-tools
 */
 window.dataLayer = window.dataLayer || [];
 dataLayer.push({
