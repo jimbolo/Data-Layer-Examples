@@ -1,6 +1,7 @@
 /**
  * Secondary Google Ads Purchase Tracking System
  * Implements comprehensive failsafe tracking with event aggregation and scoring
+ * Documentation: https://claude.ai/share/d56c75c8-ffb6-4507-b57a-87e9b075d743
  */
 
 class SecondaryTrackingSystem {
